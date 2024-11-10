@@ -1,6 +1,6 @@
 // #popclip extension for Google Gemini
 // name: Gemini Translate
-// icon: "iconify:mdi:alpha-e-circle"
+// icon: "iconify:mingcute:translate-line"
 // language: javascript
 // module: true
 // entitlements: [network]
@@ -10,10 +10,10 @@
 // },
 // {
 //    identifier: model, label: 'model', type: multiple,
-//    values:['gemini-1.5-flash-latest','gemini-1.5-pro-latest','gemini-1.0-pro']
+//    values:['gemini-1.5-pro-002', 'gemini-1.5-flash-002', 'gemini-1.5-flash-latest','gemini-1.5-pro-latest','gemini-1.0-pro']
 //  }, {
 //   identifier: prompt, label: 'Translate Prompt', type: string,
-//   defaultValue: "I will give you text content, you will rewrite it and translate the text into {lang} language. Keep the meaning the same. Do not alter the original structure and formatting outlined in any way. Only give me the output and nothing else.Now, using the concepts above, translate the following text:{input}",
+//   defaultValue: "I will give you a text, and you will translate it to {lang} language. If the text is already in {lang} language, then translate it to Chinese. Do not alter the original structure and formatting outlined in any way. Only give the output in the final single language, do not show any indicator of the target language name or anything else. Now, according to above mentioned rules, translate the following text: \n\n{input}",
 //   description: 'Enter the prompt template using {input} {lang} as a placeholder for the text'
 // },{
 //    identifier: tolang, label: 'Language', type: multiple,
