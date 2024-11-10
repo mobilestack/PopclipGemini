@@ -1,6 +1,6 @@
 // #popclip extension for Google Gemini
 // name: Gemini Spelling&Grammar
-// icon: "iconify:ic:round-fact-check"
+// icon: "iconify:qlementine-icons:spell-check-16"
 // language: javascript
 // module: true
 // entitlements: [network]
