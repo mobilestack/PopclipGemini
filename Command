@@ -1,5 +1,5 @@
 // #popclip extension for Google Gemini
-// name: Gemini Make Longer
+// name: Gemini Command
 // icon: "iconify:mingcute:ai-fill"
 // language: javascript
 // module: true
