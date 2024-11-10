@@ -13,7 +13,7 @@
 //    values:['gemini-1.5-flash-latest','gemini-1.5-pro-latest','gemini-1.0-pro']
 //  }, {
 //   identifier: prompt, label: 'Make Longer Prompt', type: string,
-//   defaultValue: "I'll give you text. You'll rewrite it and output it longer Keep the meaning the same as well as the language. Only give me the output and nothing else. Now, using the concepts above, re-write the following text. Respond in the same language variety or dialect of the following text:{input}",
+//   defaultValue: "I'll give you a text. You'll rewrite it and output it longer and more expressive. Explain necessary parts in details. Keep the core meaning and focus the same as the original text. Also respond with the same language. Only give me the output and nothing else. Now, with the rules above, re-write the following text: \n{input}",
 //   description: 'Enter the prompt template using {input} as a placeholder for the text'
 // }]
 
@@ -52,10 +52,11 @@ async function generateContent(input, options) {
     );
 
     const generatedText = response.data.candidates[0].content.parts.map(part => part.text).join('\n');
-    return generatedText;
+    const outputText = input.text + "\n\n" + generatedText
+    return outputText;
   } catch (error) {
     console.error("Error generating content:", error);
-    return "Error generating content: " + error.message;
+    return input.text + "\n\n" + "Error generating content: " + error.message;
   }
 }
 
