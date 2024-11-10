@@ -56,7 +56,7 @@ async function generateContent(input, options) {
     );
 
     const generatedText = response.data.candidates[0].content.parts.map(part => part.text).join('\n');
-    outputText = input.text + "\n\n" + generatedText
+    const outputText = input.text + "\n\n" + generatedText
     return outputText;
   } catch (error) {
     console.error("Error generating content:", error);
