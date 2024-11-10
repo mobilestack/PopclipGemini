@@ -60,7 +60,7 @@ async function generateContent(input, options) {
     return outputText;
   } catch (error) {
     console.error("Error generating content:", error);
-    return "Error generating content: " + error.message;
+    return input.text + "\n\n" + "Error generating content: " + error.message;
   }
 }
 
