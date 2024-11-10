@@ -10,7 +10,7 @@
 // },
 // {
 //    identifier: model, label: 'model', type: multiple,
-//    values:['gemini-1.5-flash-latest','gemini-1.5-pro-latest','gemini-1.5-pro-002','gemini-1.5-flash-002','gemini-1.5-pro-001','gemini-1.5-flash-001']
+//    values:['gemini-1.5-flash-latest','gemini-1.5-pro-latest','gemini-1.5-pro']
 //  }, {
 //   identifier: prompt, label: 'AI Command', type: string,
 //   defaultValue: "{input}",
